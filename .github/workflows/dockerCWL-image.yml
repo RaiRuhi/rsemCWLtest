@@ -1,18 +1,13 @@
-name: Docker Image CI
+name: Docker
 
 on:
-  push:
-    branches: [ main ]
   pull_request:
     branches: [ main ]
-
+  
 jobs:
-
-  build:
-
-    runs-on: ubuntu-latest
-
+  my_first_job:
     steps:
-    - uses: actions/checkout@v3
+      - name: My first step
+        uses: docker://ghcr.io/rairuhi/rsem1.2.25
 
       
