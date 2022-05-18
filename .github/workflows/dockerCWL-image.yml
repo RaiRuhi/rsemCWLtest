@@ -15,4 +15,4 @@ jobs:
     steps:
     - uses: actions/checkout@v3
       registry-url: https://ghcr.io/RaiRuhi/rsem1.2.25/
-      run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
+      
